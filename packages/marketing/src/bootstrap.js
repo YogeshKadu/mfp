@@ -1,0 +1,14 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+const MountMarketing = (el) => {
+  ReactDOM.render(<App />, el);
+};
+
+if (process.env.NODE_ENV === "development") {
+  const devElement = document.getElementById("dev-marketing");
+  if (devElement) MountMarketing(devElement);
+}
+
+export { MountMarketing };
