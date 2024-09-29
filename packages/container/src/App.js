@@ -1,14 +1,17 @@
 import React from "react";
 import MarketingApp from "./components/MarketingApp";
+import Header from "./components/Header";
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 // App entrypoint
 function App() {
   return (
-    <div>
-      <h1>Hi There !!!!!!!,</h1>
-      <hr />
-      <MarketingApp />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+        <MarketingApp />
+      </div>
+    </BrowserRouter>
   );
 }
 
