@@ -18,7 +18,7 @@ const GeneratedClassName = createGenerateClassName({
 
 const history = createBrowserHistory();
 
-// App entrypoint
+// App entrypoint!!
 function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
   useEffect(() => {
